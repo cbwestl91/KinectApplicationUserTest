@@ -1,0 +1,19 @@
+﻿<Window x:Class="KinectUsabilityTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SimpleSmoothing" Height="350" Width="525">
+
+    <StackPanel>
+        <TextBlock Name="xValue" Text="X value" FontSize="40" />
+        <TextBlock Name="yValue" Text="Y Value" FontSize="40" />
+        <TextBlock Name="zValue" Text="Z Value" FontSize="40" />
+        <TextBlock Name="rightHandState" Text="RightHandState" FontSize="40" />
+
+        <RadioButton Name="NoFilterButton" Content="Raw" IsChecked="True" Checked="NoFilterButton_Checked" GroupName="Filters" />
+        <RadioButton Name="SimpleAverageFilterButton" Content="Simple Average" Checked="SimpleAverageFilterButton_Checked" GroupName="Filters" />
+        <RadioButton Name="DoubleMovingAverageFilterButton" Content="Double Moving Average" Checked="DoubleMovingAverageFilterButton_Checked" GroupName="Filters" />
+        <RadioButton Name="ModifiedDoubleMovingAverageButton" Content="Modified Double Moving Average" Checked="ModifiedDoubleMovingAverageButton_Checked" GroupName="Filters" />
+        <RadioButton Name="ExponentialSmoothingButton" Content="Exponential Smoothing" Checked="ExponentialSmoothingButton_Checked" GroupName="Filters" />
+        <RadioButton Name="DoubleExponentialSmoothingButton" Content="Double Exponential Smoothing" Checked="DoubleExponentialSmoothingButton_Checked" GroupName="Filters" />
+    </StackPanel>
+</Window>
