@@ -5,6 +5,8 @@ using Microsoft.Kinect;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
+
+// This is the code attachment for the master's thesis: Petrel Software Usability Study: Using the Microsoft Kinect v2 for Workflow Execution by Christopher Benjamin Westlye
 namespace KinectUsabilityTest
 {
 
