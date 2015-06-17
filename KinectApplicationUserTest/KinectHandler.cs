@@ -15,8 +15,6 @@ namespace KinectUsabilityTest
         private KinectSensor kinectSensor = null;
         private BodyFrameReader bodyFrameReader = null;
         private Body[] bodies = null;
-        private float centerX = -1000;
-        private float centerY = -1000;
 
         private HandState previousHandRightState;
         private HandState previousHandLeftState;
@@ -138,15 +136,7 @@ namespace KinectUsabilityTest
                         coordArgs.Z = z;
                         OnRightHandCoordinatesChanged(coordArgs);
 
-                        // Set center coordinates.
-                        if (centerX == -1000)
-                        {
-                            centerX = x;
-                        }
-                        if (centerY == -1000)
-                        {
-                            centerY = y;
-                        }
+                        
 
                         // Compare current HandRightState with previous HandRightState.
                         if (body.HandRightState != previousHandRightState)
